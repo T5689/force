@@ -1,0 +1,457 @@
+@font-face{
+    src: url(../font/MyriadProCond.ttf);
+    font-family: Myriad;
+}
+
+@font-face{
+    src: url(../font/RobotoCondensed-Light.ttf);
+    font-family: roboto;
+}
+.reset{
+    text-transform: none;
+}
+.bg-lightgreen{ /*brand bg color*/
+    background-color: #01d936;
+}
+
+.btn{
+    border: 1px #01d936 solid;
+    padding: 10px;
+    font-family: roboto;
+    color: #00d85b;
+}
+
+/* Teszt 
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+}
+
+header { 
+    width:100%;
+    margin: auto 0;
+    padding: 0;
+}
+
+section{
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+}
+/* /Teszt */
+
+.navbar{
+    background-image: linear-gradient(#333, #000)
+}
+
+.navbar div{
+    padding: 0;
+}
+
+.nav-link{
+    border-width: 0 3px 0 0;
+    border-style: solid;
+    border-image: linear-gradient(to left, #000, rgba(0, 0, 0, 0)) 1 100%;     
+}
+
+
+.nav-item a:hover{
+    background-image: linear-gradient(#000, #333);
+    color: #01d936 !important;
+}
+
+.nav-item a:active{
+    background-image: linear-gradient(#000, #333);
+    color: #01d936 !important;
+}
+
+.nav-item a:focus{
+    background-image: linear-gradient(#000, #333);
+    color: #01d936 !important;
+}
+
+.navbar-brand{
+    font-family: Myriad;
+}
+
+.carousel-caption{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 210px;
+    left: 0;
+    bottom: 0;
+}
+
+.carousel-caption p{
+    font-family: roboto;
+}
+
+.carousel-indicators li{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 3px solid #01d936;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+.carousel-green-text{ /*carousel green color*/
+    color: #01d936;
+}
+
+.carousel-item img{
+    border: none;
+}
+
+.gscale-link a:hover{
+    background-image: linear-gradient(#333, #000);
+    color: white;
+}
+
+.gscale-title{
+    color: #00d85b;
+    font-family: roboto;
+    font-weight: bold;
+}
+
+.gscale-text{
+    color: rgba(0,0,0,0.6);
+    font-family: roboto;
+    font-weight: bold;
+}
+
+mark{
+    text-transform: uppercase;
+    font-family: Myriad;
+    background-color: #01d936 !important;
+}
+
+img{
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+#parallax{
+    text-shadow: 1px 1px 4px black;
+    background-image: url(../img/header3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgba(0,0,0,0.5);
+    cursor: default;
+    width: 100%;
+    height: 414px;
+}
+
+.plx h3{
+    font-family: Myriad;
+    font-size: 6vw;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.plx{
+    padding: 150px 0;
+}
+
+h2{
+    font-size: 250%;
+    margin: 0 0 20px 0;
+    padding-top: 100px;
+}
+
+h5{
+    text-transform: uppercase;
+    font-family: Myriad;
+}
+
+h4{
+    font-family: Myriad;
+    color: #01d936;
+}
+
+article p{
+    font-family: roboto;
+    font-size: 185%;
+}
+
+article p:last-child{
+    padding-bottom: 100px;
+}
+
+#termek{
+    background-image: url(../img/dark-mosaic.png);
+    padding: 0 !important;
+}
+
+#kiemelt{
+    background-image: url(../img/paper-mosaic.png) 
+}
+
+#uj{
+    background-image: url(../img/paper-mosaic.png) 
+}
+
+
+#tura{
+    background-color: rgba(255,255,255,0.5);
+}
+
+#tura h2{
+    margin-bottom: 30px;
+}
+
+#footer{
+    text-transform: uppercase;
+    background-color: #222;
+    width: 100%;
+    margin-top: 200px;
+}
+
+#footer li{
+    border-bottom: 1px solid grey;
+    margin: 10px 0;
+    padding-bottom: 10px;
+}
+
+#footer a{
+    color: grey;
+    margin: 2px 0;
+    padding: 20px 0;
+    font-size: 100%;
+    text-transform: uppercase;
+}
+
+#footer h2{
+    color: #01d936;
+    font-family: Myriad;
+    font-size: 160%;
+}
+
+#tag-cloud li.tags, a{
+    text-transform: none;
+    border-bottom: none;
+    color: white
+}
+
+#tag-cloud a{
+    color: white;
+    background-color: #5bb85d;
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px;
+    margin-top: 2px;
+    text-transform: none;
+    font-size: 80%;
+}
+
+#tag-cloud a:hover{
+    background-image: linear-gradient(#333, #000);
+    color: white;
+}
+
+input{
+    margin: 15px 0;
+    border: none;
+    outline-color: #01d936
+}
+
+input:hover, input:focus{
+    margin: 15px 0;
+    border: none;
+}
+
+input[type="email"]{
+    padding: 10px 10px;
+}
+
+::placeholder{
+    color: #ddd !important;
+    margin-left: 4px !important;
+}
+
+div.submit button{
+    padding: 5px 10px !important;
+    color: white;
+    border: none;
+}
+
+div.submit button:hover{
+    background-image: linear-gradient(#333, #000);
+    color: white;
+}
+
+.submit p{
+    margin-top: 15px;
+    color: white;
+}
+
+.copyright{
+    color: grey
+}
+
+@media(max-width:1050px){
+
+    div.logo{
+        padding-left: 50px;
+    }
+
+    h2{
+        font-size: 150%;
+        padding-top: 10px
+    }
+
+    #termek h2{
+        padding-top: 10%;
+    }
+
+    #termek p{
+        font-size: 110%;
+        padding-bottom: 10%;
+    }
+
+    #kiemelt h2{
+        padding-top: 50px;
+    }
+
+    #kiemelt p{
+        font-size: 110%;
+        margin: 0;
+    }
+
+    #kiemelt p:last-child {
+        padding-bottom: 10%;
+    }
+
+    #uj h2{
+        margin-top: 50px;
+    }
+    
+    #uj p {
+        font-size: 130%;
+        margin: 0;
+    }
+
+    #uj p:last-child{
+        padding-bottom: 40%;
+    }
+
+    #tura p:first-child{
+        font-size: 100%
+    }
+
+    #tura h2{
+        margin-bottom: 5%;
+    }
+
+    #tura p a{
+        margin-bottom: 40%;
+    }
+
+    #footer{
+        padding-top: 100px;
+    }
+
+    #footer .tags a{
+        color: white;
+        background-color: #777;
+        border-radius: 5px
+    }
+
+    div.submit button{
+        border-radius: 0 !important;
+        background-color: #01d936 !important;
+    }
+}
+
+@media(max-width:767px){
+    
+    div.logo{
+        padding-left: 80px;
+    }
+
+    article img{
+        margin-bottom: 0;
+    }
+
+    article p{
+        padding-bottom: 10%;
+    }
+
+    article p:last-child{
+        padding-bottom: 20%;
+    }
+
+    #tura p:first-child{
+        font-size: 210%
+    }
+
+    #tura p a:last-child{
+        margin-bottom: 5%;
+    }
+
+    #footer h2{
+        padding-top: 10px; 
+    }
+
+    #footer h2#vasarlas{
+        padding-top: 50px; 
+    }
+
+    #footer h2#kapcsolat{
+        padding-top: 50px; 
+    }
+    
+    #footer .tags a{
+        color: white;
+        background-color: #777;
+        border-radius: 5px
+    }
+
+    div.submit button{
+        border-radius: 0 !important;
+        background-color: #01d936 !important;
+    }
+}
+
+@media(max-width:575px){
+
+    div.logo{
+        padding-left: 100px;
+    }
+
+    article img{
+        margin-bottom: 0;
+    }
+
+    article p:last-child{
+        margin-bottom: 5%;
+    }
+
+    #footer h2{
+        padding-top: 10px; 
+    }
+
+    #footer h2#vasarlas{
+        padding-top: 50px; 
+    }
+
+    h2:first-child{
+        padding-top: 100px;
+    }
+
+    #footer .tags a{
+        color: white;
+        background-color: #777;
+        border-radius: 5px
+    }
+    
+    div.submit button{
+        border-radius: 0 !important;
+        background-color: #01d936 !important;
+    }
+}
